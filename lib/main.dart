@@ -18,8 +18,10 @@ class MyApp extends StatelessWidget {
       client: serviceLocator<ValueNotifier<GraphQLClient>>(),
       child: MaterialApp(
         title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey),
+          primaryColor: Colors.grey,
           useMaterial3: true,
         ),
         home: const QuestionOnePage(),
