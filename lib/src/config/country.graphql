@@ -1,0 +1,12 @@
+query FetchCountry () {
+    fetchCountry: countries() {
+        name
+        capital
+    }
+}
+query GetCountryWithCode ($code: ID!) {
+    getCountryWithCode: country(code: $code) {
+        name
+    }
+}
+

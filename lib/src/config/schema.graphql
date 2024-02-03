@@ -1,0 +1,13 @@
+type Query {
+    countries(): [Country!]
+    country(code:String!):Country
+    country(code:String!):Country
+}
+
+
+type Country{
+    name:String
+    capital:String
+}
+
+  
